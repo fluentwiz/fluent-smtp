@@ -37,7 +37,10 @@ import {
     Collapse,
     CollapseItem,
     Skeleton,
-    SkeletonItem
+    SkeletonItem,
+    Progress,
+    InputNumber,
+    Badge,
 } from 'element-ui';
 
 Vue.use(Row);
@@ -73,6 +76,9 @@ Vue.use(OptionGroup);
 Vue.use(ButtonGroup);
 Vue.use(TableColumn);
 Vue.use(CheckboxGroup);
+Vue.use(Progress);
+Vue.use(InputNumber);
+Vue.use(Badge);
 Vue.use(Loading.directive);
 
 Vue.prototype.$message = MessageBox.alert;
