@@ -6,6 +6,7 @@ import Test from './Modules/Test/Test';
 import Support from './Modules/Misc/Support';
 import Docs from './Modules/Misc/Docs';
 import NotificationSettings from './Modules/NotificationSettings/NotificationSettings.vue';
+import RoundRobin from './Modules/RoundRobin/RoundRobinConfig.vue';
 
 export default [
     {
@@ -55,5 +56,11 @@ export default [
         path: '/notification-settings',
         meta: {},
         component: NotificationSettings
+    },
+    {
+        name: 'rr_config',
+        path: '/rr_config',
+        meta: {},
+        component: RoundRobin
     }
 ];

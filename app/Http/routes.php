@@ -57,3 +57,13 @@ $app->post('/logs/delete', 'LoggerController@delete');
 
 $app->post('install_plugin', 'SettingsController@installPlugin');
 $app->get('docs', 'DashboardController@getDocs');
+
+/*
+ * Round Robin Routes
+ */
+$app->get('round-robin/stats', 'RoundRobinController@getStats');
+$app->post('round-robin/reset', 'RoundRobinController@resetRoundRobin');
+$app->post('round-robin/reset_daily', 'RoundRobinController@resetDailyCounts');
+$app->post('round-robin/save_limits', 'RoundRobinController@saveDailyLimits');
+$app->post('round-robin/change_status', 'RoundRobinController@changeStatus');
+
